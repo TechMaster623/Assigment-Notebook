@@ -8,15 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var assignmentList = AssignmentList()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            List {
+                ForEach(assignmentList.items) {
+                    item in Text(item.description)
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text(item.course)
+                                .font(.headline)
+                            Text(item.description)
+                        }
+                        Spacer()
+                        Text(item.dueDate, style: .date)
+                    }
+                }
+                .onMove { indices, newOffset in assignmentList.items.move(fromOffsets: indices, toOffset: newOffset)
+                    }
+                .onDelete { indexSet in assignmentList.items.remove(atOffsets: indexSet)
+                }
+                .navigationBarItems(leading: EditButton())
+                }
+            }
         }
-        .padding()
+        
     }
+
+struct AssigmentItem: Identifiable {
+    var id = UUID()
+    var course = String()
+    var description = String()
+    var dueDate = Date()
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -24,3 +47,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
