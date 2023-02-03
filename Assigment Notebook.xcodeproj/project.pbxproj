@@ -12,6 +12,7 @@
 		2D7F97EE298C14C6008CDC38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D7F97ED298C14C6008CDC38 /* Assets.xcassets */; };
 		2D7F97F1298C14C6008CDC38 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D7F97F0298C14C6008CDC38 /* Preview Assets.xcassets */; };
 		2D7F97F8298D57CC008CDC38 /* AssignmentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F97F7298D57CC008CDC38 /* AssignmentList.swift */; };
+		2D7F97FA298D5A39008CDC38 /* AddAssignmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F97F9298D5A39008CDC38 /* AddAssignmentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		2D7F97ED298C14C6008CDC38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D7F97F0298C14C6008CDC38 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2D7F97F7298D57CC008CDC38 /* AssignmentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentList.swift; sourceTree = "<group>"; };
+		2D7F97F9298D5A39008CDC38 /* AddAssignmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAssignmentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				2D7F97E9298C14C5008CDC38 /* Assigment_NotebookApp.swift */,
 				2D7F97EB298C14C5008CDC38 /* ContentView.swift */,
+				2D7F97F9298D5A39008CDC38 /* AddAssignmentView.swift */,
 				2D7F97F7298D57CC008CDC38 /* AssignmentList.swift */,
 				2D7F97ED298C14C6008CDC38 /* Assets.xcassets */,
 				2D7F97EF298C14C6008CDC38 /* Preview Content */,
@@ -143,6 +146,7 @@
 				2D7F97F8298D57CC008CDC38 /* AssignmentList.swift in Sources */,
 				2D7F97EC298C14C5008CDC38 /* ContentView.swift in Sources */,
 				2D7F97EA298C14C5008CDC38 /* Assigment_NotebookApp.swift in Sources */,
+				2D7F97FA298D5A39008CDC38 /* AddAssignmentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
