@@ -43,7 +43,7 @@ struct ContentView: View {
         
     }
 
-struct AssigmentItem: Identifiable {
+struct AssigmentItem: Identifiable, Codable {
     var id = UUID()
     var course = String()
     var description = String()
